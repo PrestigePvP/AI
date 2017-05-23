@@ -1,6 +1,5 @@
 package me.tre.ai.function.event.events;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import me.tre.ai.function.event.Event;
 

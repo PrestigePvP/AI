@@ -9,5 +9,4 @@ public class Profile {
 
     @Setter @Getter private Integer zipCode;
 
-
 }

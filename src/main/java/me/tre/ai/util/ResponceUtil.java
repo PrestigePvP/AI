@@ -2,7 +2,6 @@ package me.tre.ai.util;
 
 import lombok.experimental.UtilityClass;
 import me.tre.ai.Constants;
-import me.tre.ai.function.AI;
 
 import javax.swing.*;
 

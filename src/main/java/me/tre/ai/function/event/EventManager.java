@@ -44,7 +44,7 @@ public class EventManager {
     }
 
 
-    private static final Map<Class<? extends Event>, List<MethodData>> REGISTRY_MAP = new HashMap<Class<? extends Event>, List<MethodData>>();
+    private static final Map<Class<? extends Event>, List<MethodData>> REGISTRY_MAP = new HashMap<>();
 
 
     public final Event call(final Event event) {
@@ -71,7 +71,7 @@ public class EventManager {
     private void invoke(MethodData data, Event argument) {
         try {
             data.getTarget().invoke(data.getSource(), argument);
-        } catch (Exception e) {
+        } catch (Exception ignored) {
         }
     }
 
@@ -144,7 +144,7 @@ public class EventManager {
 
 
     private void sortListValue(Class<? extends Event> indexClass) {
-        List<MethodData> sortedList = new CopyOnWriteArrayList<MethodData>();
+        List<MethodData> sortedList = new CopyOnWriteArrayList<>();
 
         for (final EventPriority priority : EventPriority.VALUE_ARRAY)
             sortedList.addAll(REGISTRY_MAP.get(indexClass).stream().filter(data -> data.getPriority() == priority).collect(Collectors.toList()));

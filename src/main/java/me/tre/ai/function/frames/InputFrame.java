@@ -1,8 +1,6 @@
 package me.tre.ai.function.frames;
 
 import me.tre.ai.Constants;
-import me.tre.ai.function.Questions;
-import me.tre.ai.function.event.events.AnswerEvent;
 import me.tre.ai.function.event.events.QuestionEvent;
 import me.tre.ai.util.GreetingsUtil;
 
@@ -29,7 +27,7 @@ public class InputFrame extends JFrame {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
 
-        JTextField area = new JTextField("Enter question here!");
+        final JTextField area = new JTextField("Enter question here!");
         area.addKeyListener(new KeyAdapter() {
 
             @Override
@@ -63,7 +61,7 @@ public class InputFrame extends JFrame {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
 
-        JTextField area = new JTextField("Enter question here!");
+        final JTextField area = new JTextField("Enter question here!");
         area.addKeyListener(new KeyAdapter() {
 
             @Override

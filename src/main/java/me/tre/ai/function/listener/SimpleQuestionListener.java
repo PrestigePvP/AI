@@ -9,7 +9,6 @@ import me.tre.ai.util.ResponceUtil;
 
 import javax.swing.*;
 import java.util.Calendar;
-import java.util.regex.Pattern;
 
 public class SimpleQuestionListener {
 
@@ -54,7 +53,7 @@ public class SimpleQuestionListener {
                         }
                     }
                 } else {
-                    ResponceUtil.sendMessageResponce("You're " + Constants.getAi().getProfile().getName() + ", or atleast thats what you told me!");
+                    ResponceUtil.sendMessageResponce("You're " + Constants.getAi().getProfile().getName() + ", or at least that's what you told me!");
                     return;
                 }
             } else {
