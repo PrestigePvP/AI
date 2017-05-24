@@ -10,7 +10,7 @@ public class ResponceUtil {
 
     public int sendMessageResponce(String message) {
         return JOptionPane.showConfirmDialog(null, message,
-                "", JOptionPane.INFORMATION_MESSAGE);
+                "", JOptionPane.OK_CANCEL_OPTION);
     }
 
     public void sendStupidMessage(String message){
